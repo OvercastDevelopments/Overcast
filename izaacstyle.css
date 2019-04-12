@@ -1,0 +1,729 @@
+html, body {
+    height: auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+#wrapper{
+    background: url('img/building.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+ #heading1 {
+     font-family: 'Quicksand', sans-serif;
+     font-size: 100px;
+     text-align: center;
+     background: rgba(255, 255, 255, 0.9);
+     color: black;
+     font-weight: bold;
+     margin: 0 auto;
+     padding: 10px;
+     width: 50%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     mix-blend-mode: screen;
+ }
+
+ #whoami {
+     margin-left: 45%;
+     margin-top: 30%;
+ }
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background: rgba(255, 255, 255, 0.8); !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #808080;
+    border-color: #808080;
+}
+
+section {
+    padding: 60px 0;
+    margin-top: 18%;
+}
+
+section .section-title {
+    text-align: center;
+    color: #808080;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #808080 !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #808080 !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+    font-size: 18px;
+    background-color: transparent;
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+#footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: white;
+    border-top: .05rem solid #e5e5e5;
+}
+
+ #facebookicon {
+     height: 35px;
+     width: 35px;
+     margin-right: auto;
+     margin-left: auto;
+
+ }
+#instagramicon {
+    height: 35px;
+    width: 35px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#snapchaticon {
+    height: 35px;
+    width: 35px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#linkedinicon {
+    height: 35px;
+    width: 35px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#infocard1 {
+    width: 600px;
+    height: 250px;
+    margin-left: 47%;
+    position: absolute;
+    font-size: 18px;
+}
+
+#devphoto {
+    width: 250px;
+    height: 250px;
+    margin-left: 22%;
+    border-radius: 50%;
+    position: absolute;
+
+}
+#info{
+    margin-top: 20%;
+    padding-top: 60px;
+}
+#container {
+    text-align: center;
+    padding-top: 350px;
+}
+
+.label {
+    background: white;
+    display:inline-block;
+    border-radius: 12px;
+    color: black;
+    height: 28px;
+    padding: 3px 8px 3px 6px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+#langauges {
+    height: 1575px;
+    margin-top: 22%;
+    background: rgba(255, 255, 255, 0.9);
+}
+#container5 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#langaugesheading {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+
+}
+#aboutmeheading {
+    text-align: center;
+}
+
+#cardbackground {
+    width: 958px;
+    height: 330px;
+    margin-top: -250px;
+    margin-left: 280px;
+    background: rgba(255, 255, 255, 0.2);
+
+}
+
+#controller1 {
+    width: 600px;
+    padding-top: 2%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#parallax {
+    background-image: url("img/building.jpg");
+    height: 2380px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {box-sizing: border-box}
+
+.container {
+    width: 100%;
+    background-color: transparent;
+}
+
+.skills {
+    text-align: right;
+    padding: 10px;
+    color: white;
+}
+
+.html {
+    width: 100%;
+    background-color: #4CAF50;
+}
+.css {
+    width: 100%;
+    background-color: #2196F3;
+}
+.js {
+    width: 100%;
+    background-color: #f44336;
+}
+.php {
+    width: 100%;
+    background-color: #808080;
+}
+
+#aboutheading {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}
+#container2 {
+    height: 680px;
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#MyServices {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}
+#servicesbutton {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 47%;
+    margin-top: 25%;
+}
+#servicesheading {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}
+
+#serviceswrapper {
+    background-image: url('img/building.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1980px;
+}
+#servicesrundown {
+    margin-top: 45%;
+    text-align: center;
+    border: none;
+    width: 105%;
+}
+#container4 {
+    padding-top: 8px;
+    background: rgba(255, 255, 255, 0.9);;
+    height: 1200px;
+    text-align: center;
+    margin-top: 25%;
+}
+#cardtextbackground{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#cardtextbackgroundsubtext{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#myexperience {
+    padding-top: 20px;
+    margin-top: 2%;
+}
+
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.6)
+}
+
+.price .header {
+    background-color: grey;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+
+    padding: 20px;
+    text-align: center;
+}
+
+#listitems {
+    background-color: white;
+    font-size: 20px;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+#listfooter {
+    background-color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+#pricingtable {
+    margin-top: 2%;
+
+}
+#scrollbutton {
+    margin-top: 28%;
+    margin-left: 44%;
+}
+#scrollbutton2 {
+    margin-left: 46%;
+    margin-top: 4%;
+}
+#otherenquires{
+    margin-top: -15%;
+    text-align: center;
+}
+#contactform {
+    background: rgba(255, 255, 255, 0.9);
+    height: 650px;
+}
+#forminputfields {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+#currentproject {
+    height: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding-top: 200px;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        display: flex;
+        padding-bottom: 0;
+        height: 50px;
+        align-items: center;
+        font-size: 8px;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 20px;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+    #heading1{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.9);
+        color: black;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 10px;
+        width: 50%;
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: screen;
+    }
+    #whoami{
+        margin-top: 55%;
+        margin-left: 37%;
+    }
+    #aboutheading{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.9);
+        color: black;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 10px;
+        width: 50%;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: screen;
+    }
+    #scrollbutton {
+        visibility: hidden;
+    }
+    #devphoto{
+        width: 100px;
+        height: 100px;
+        margin-left: 10%;
+
+    }
+
+    #infocard1 {
+        font-size: 10px;
+        width: 250px;
+        height: 180px;
+        margin-left: 36%;
+    }
+    #container {
+        margin-top: -25%;
+        font-size: 14px;
+    }
+    #langaugesheading{
+        font-size: 22px;
+    }
+    #aboutmeheading {
+        font-size: 22px;
+        text-align: center;
+    }
+    #overcastaboutheading{
+        font-size: 20px;
+    }
+    #controller1 {
+        width: 300px;
+        height: 200px;
+        font-size: 10px;
+    }
+    #container5{
+        padding-top: 530px;
+    }
+    #parallax {
+        height: 1750px;
+    }
+    #servicesheading {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.9);
+        color: black;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 10px;
+        width: 50%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: screen;
+    }
+    #container4{
+        height: 2300px;
+
+    }
+    #serviceswrapper{
+        height: 2600px;
+    }
+    #otherenquires {
+        margin-top: -60%;
+    }
+    #contactform {
+        width: 100%;
+        height: 650px;
+        margin-top: 8%;
+    }
+    #forminputfields {
+        width: 350px;
+    }
+    #currentproject {
+        width: 100%;
+        margin-top: 8%;
+    }
+}

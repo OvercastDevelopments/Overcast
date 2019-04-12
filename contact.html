@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="izaacstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+
+</head>
+<body>
+<div id="wrapper" >
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="index.html" class="logo">Overcast</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="services.html" class="nav-links">Our Services</a>
+            </li>
+            <li>
+                <a href="about.html" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="contact.html" class="nav-links">Contact</a>
+            </li>
+            <li>
+                <a href="currentprojects.html" class="nav-links">Our Current Projects</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="contactform">
+        <form action="https://formspree.io/izaacmarccrooke16@gmail.com" method="POST" id="forminputfields">
+            <h1>Contact Us</h1>
+            <hr>
+            <div class="form-group">
+                <label for="firstname">Firstname:</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Lastname:</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="useremail">Email:</label>
+                <input type="text" class="form-control" id="useremail" name="useremail" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleSelect1">Which service do you require:</label>
+                <select class="form-control" id="exampleSelect1" name="serviceselection" required>
+                    <option>Website Development</option>
+                    <option>Software testing/automation</option>
+                    <option>Website Management</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleTextarea">Brief Description of what your looking for:</label>
+                <textarea class="form-control" id="exampleTextarea" name="description" rows="3" placeholder="Description"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <div id="footer">
+        <p>@Copyright Izaac Crooke</p>
+        <img src="icons/facebook.png" id="facebookicon" onclick="facebook()">
+        <img src="icons/instagram.png" id="instagramicon" onclick="instagram()">
+        <img src="icons/linkedin.png" id="linkedinicon" onclick="linkedin()">
+        <img src="icons/snapchat.png" id="snapchaticon" onclick="snapchat()">
+    </div>
+</div>
+</body>
+</html>
